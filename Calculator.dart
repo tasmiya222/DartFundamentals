@@ -22,26 +22,24 @@ void Division(num number1, num number2) {
 
 void main() {
   print("==================Making Calculator From Function ===========");
-  print("\n");
-
   print("Enter your First Number");
   num num1 = num.parse(stdin.readLineSync()!);
   print("Enter your Second Number");
   num num2 = num.parse(stdin.readLineSync()!);
   print("Please Select Option for your Operation");
-  print("+\n-\n*\n/\n");
+  print("1: Add \n2: Sub\n3: Mul\n4:Div\n");
   var Operation = stdin.readLineSync()!;
 
-  if (Operation == "+") {
+  if (Operation == "1") {
     Addition(num1, num2);
   }
-  if (Operation == "-") {
+  if (Operation == "2") {
     subraction(num1, num2);
   }
-  if (Operation == "*") {
+  if (Operation == "3") {
     Multiply(num1, num2);
   }
-  if (Operation == "/") {
+  if (Operation == "4") {
     Division(num1, num2);
   }
 
